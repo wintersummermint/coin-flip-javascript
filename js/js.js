@@ -13,12 +13,16 @@ $(document).ready(function() {
         var side = flip[Math.floor(Math.random() * flip.length)];
 
         if (side == "heads") {
-            $("#regTitle").html("You Got " + side).addClass('animated pulse');
+            setTimeout(function(){
+                $("#regTitle").html("You Got " + side).addClass('animated pulse');
+            },800);
             $('h1').addClass('animated pulse');
             $(".image").html('<img class="heads" src="http://www.goldcoinhistory.com/wp-content/uploads/2012/05/GP_US_1850_C_Liberty_Head_One_Dollar_Type_I_obverse.jpeg"/>');
             $('.heads').addClass('animated flip');
         } else {
-            $("#regTitle").html("You Got " + side);
+            setTimeout(function(){
+                $("#regTitle").html("You Got " + side);
+            },800);
             $('h1').addClass('animated pulse');
             $(".image").html('<img class="tails" src="http://www.goldcoinhistory.com/wp-content/uploads/2012/05/GP_US_1850_C_Liberty_Head_One_Dollar_Type_I_reverse.jpeg"/>');
             $('.tails').addClass('animated flip');

@@ -22,13 +22,13 @@ body {
   font-weight: normal;
   color: #464646;
   position: relative;
-  font-size: 6em;
+  font-size: 30px;
 }
 .wrap .butts {
   display: block;
   width: 300px;
-  height: 100px;
-  background: #3461b4;
+  height: 80px;
+  background: #3FB483;
   margin: 0 auto;
   cursor: pointer;
   border-radius: 0;
@@ -47,7 +47,7 @@ body {
 .wrap .butts span {
   position: relative;
   top: 20px;
-  font-size: 2.5em;
+  font-size: 25px;
   -webkit-transition: all .3s;
   -o-transition: all .3s;
   transition: all .3s;
@@ -73,7 +73,7 @@ body {
 
 @media only screen and (max-width: 768px) {
   #regTitle {
-    font-size: 2em;
+    font-size: 12px;
     -webkit-transition: all .3s;
     -o-transition: all .3s;
     transition: all .3s;
