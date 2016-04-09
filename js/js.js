@@ -5,7 +5,7 @@ $(document).ready(function() {
         }
     }
 
-    $.preloadImages("http://www.goldcoinhistory.com/wp-content/uploads/2012/05/GP_US_1850_C_Liberty_Head_One_Dollar_Type_I_obverse.jpeg", "http://www.goldcoinhistory.com/wp-content/uploads/2012/05/GP_US_1850_C_Liberty_Head_One_Dollar_Type_I_reverse.jpeg");
+    $.preloadImages("http://www.coinnews.net/wp-content/uploads/2015/03/2015-W-Proof-Roosevelt-Silver-Dime-Obverse.jpg", "http://www.coinnews.net/wp-content/uploads/2015/03/2015-P-Reverse-Proof-Roosevelt-Silver-Dime-Reverse.jpg");
     $('h1').addClass('animated fadeInDown');
 
     function flipMe() {
@@ -17,14 +17,14 @@ $(document).ready(function() {
                 $("#regTitle").html("You Got " + side).addClass('animated pulse');
             },800);
             $('h1').addClass('animated pulse');
-            $(".image").html('<img class="heads" src="http://www.goldcoinhistory.com/wp-content/uploads/2012/05/GP_US_1850_C_Liberty_Head_One_Dollar_Type_I_obverse.jpeg"/>');
+            $(".image").html('<img class="heads" src="http://www.coinnews.net/wp-content/uploads/2015/03/2015-W-Proof-Roosevelt-Silver-Dime-Obverse.jpg"/>');
             $('.heads').addClass('animated flip');
         } else {
             setTimeout(function(){
                 $("#regTitle").html("You Got " + side);
             },800);
             $('h1').addClass('animated pulse');
-            $(".image").html('<img class="tails" src="http://www.goldcoinhistory.com/wp-content/uploads/2012/05/GP_US_1850_C_Liberty_Head_One_Dollar_Type_I_reverse.jpeg"/>');
+            $(".image").html('<img class="tails" src="http://www.coinnews.net/wp-content/uploads/2015/03/2015-P-Reverse-Proof-Roosevelt-Silver-Dime-Reverse.jpg"/>');
             $('.tails').addClass('animated flip');
         }
     }
