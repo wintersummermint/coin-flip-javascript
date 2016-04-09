@@ -1,7 +1,35 @@
-import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 body {
   font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
+}
+
+/* Preloader */
+#preloader {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background-color:#fff; /* change if the mask should have another color then white */
+  z-index:99; /* makes sure it stays on top */
+}
+
+#status {
+  width:200px;
+  height:200px;
+  position:absolute;
+  left:50%; /* centers the loading animation horizontally one the screen */
+  top:50%; /* centers the loading animation vertically one the screen */
+  background-image:url(https://dl.dropboxusercontent.com/u/3400459/CodePen/PreLoadMe/status.gif); /* path to your loading animation */
+  background-repeat:no-repeat;
+  background-position:center;
+  margin:-100px 0 0 -100px; /* is width and height divided by two */
+}
+
+/* Content - You will not need this for using PreLoadMe */
+#content {
+  margin: auto;
 }
 
 .wrap {
@@ -24,12 +52,15 @@ body {
   position: relative;
   font-size: 30px;
 }
+h2.result {
+  margin-top: 340px;
+}
 .wrap .butts {
   display: block;
   width: 300px;
   height: 80px;
   background: #3FB483;
-  margin: 300px auto;
+  margin: 0 auto;
   cursor: pointer;
   border-radius: 0;
   border: none;
@@ -75,7 +106,7 @@ body {
   width: 200px;
   height: 200px;
   position: absolute;
-  top: calc(50% - 100px);
+  top: calc(30% - 100px);
   left: calc(50% - 100px);
 }
 .thisCoin {
@@ -110,8 +141,8 @@ body {
 #coin.animation1980 {
   -webkit-animation: rotate1980 3s linear forwards;
   animation: rotate1980 3s linear forwards;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -119,8 +150,8 @@ body {
 #coin.animation2160 {
   -webkit-animation: rotate2160 3s linear forwards;
   animation: rotate2160 3s linear forwards;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: .8s;
+  animation-duration: .8s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -153,6 +184,11 @@ body {
     transform: perspective(400px) scale3d(.95, .95, .95);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
+  }
+  90% {
+    -webkit-transform: rotateY(2000deg);
+    -moz-transform: rotateY(2000deg);
+    transform: rotateY(2000deg);
   }
   to {
     -webkit-transform: perspective(400px);
@@ -193,6 +229,11 @@ body {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
+  90% {
+    -webkit-transform: rotateY(2000deg);
+    -moz-transform: rotateY(2000deg);
+    transform: rotateY(2000deg);
+  }
   to {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
@@ -231,6 +272,12 @@ body {
     transform: perspective(400px) scale3d(.95, .95, .95);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
+
+  }
+  90% {
+    -webkit-transform: rotateY(2000deg);
+    -moz-transform: rotateY(2000deg);
+    transform: rotateY(2000deg);
   }
   to {
     -webkit-transform: perspective(400px);
@@ -270,6 +317,12 @@ body {
     transform: perspective(400px) scale3d(.95, .95, .95);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
+
+  }
+  90% {
+    -webkit-transform: rotateY(2000deg);
+    -moz-transform: rotateY(2000deg);
+    transform: rotateY(2000deg);
   }
   to {
     -webkit-transform: perspective(400px);

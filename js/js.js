@@ -31,6 +31,13 @@
 
 //     $(".butts").click(flipMe);
 // });
+
+$(window).load(function() { // makes sure the whole site is loaded
+  $('#status').fadeOut(); // will first fade out the loading animation
+  $('#preloader').delay(350).fadeOut('slow'); // will fade out the white DIV that covers the website.
+  $('body').delay(350).css({'overflow':'visible'});
+})
+
 jQuery(document).ready(function($){
     $('h1').addClass('animated fadeInDown');
     // var spinArray = ['animation900','animation1080','animation1260','animation1440','animation1620','animation1800','animation1980','animation2160'];
@@ -38,10 +45,19 @@ jQuery(document).ready(function($){
 
     function getSpin() {
     var spin = spinArray[Math.floor(Math.random()*spinArray.length)];
+    if (spin == 'animation2160') {
+        setTimeout(function(){
+            $('.result').html('Result: Heads!');
+        },700);
+    } else {
+        setTimeout(function(){
+            $('.result').html('Result: Tails!');
+        },700);
+    }
     return spin;
     }
 
-    $('#coin').on('click', function(){
+    $('.butts').on('click', function(){
 
     $('#coin').removeClass();
 
