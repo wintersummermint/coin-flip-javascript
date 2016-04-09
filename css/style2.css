@@ -141,8 +141,8 @@ h2.result {
 #coin.animation1980 {
   -webkit-animation: rotate1980 3s linear forwards;
   animation: rotate1980 3s linear forwards;
-  -webkit-animation-duration: .8s;
-  animation-duration: .8s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -150,8 +150,8 @@ h2.result {
 #coin.animation2160 {
   -webkit-animation: rotate2160 3s linear forwards;
   animation: rotate2160 3s linear forwards;
-  -webkit-animation-duration: .8s;
-  animation-duration: .8s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -185,10 +185,8 @@ h2.result {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  90% {
-    -webkit-transform: rotateY(2000deg);
-    -moz-transform: rotateY(2000deg);
-    transform: rotateY(2000deg);
+  84% {
+    animation-timing-function: ease-in;
   }
   to {
     -webkit-transform: perspective(400px);
@@ -229,10 +227,8 @@ h2.result {
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-  90% {
-    -webkit-transform: rotateY(2000deg);
-    -moz-transform: rotateY(2000deg);
-    transform: rotateY(2000deg);
+  84% {
+    animation-timing-function: ease-in;
   }
   to {
     -webkit-transform: perspective(400px);
@@ -274,10 +270,8 @@ h2.result {
     animation-timing-function: ease-in;
 
   }
-  90% {
-    -webkit-transform: rotateY(2000deg);
-    -moz-transform: rotateY(2000deg);
-    transform: rotateY(2000deg);
+  85% {
+    animation-timing-function: ease-in;
   }
   to {
     -webkit-transform: perspective(400px);
@@ -319,10 +313,8 @@ h2.result {
     animation-timing-function: ease-in;
 
   }
-  90% {
-    -webkit-transform: rotateY(2000deg);
-    -moz-transform: rotateY(2000deg);
-    transform: rotateY(2000deg);
+  85% {
+    animation-timing-function: ease-in;
   }
   to {
     -webkit-transform: perspective(400px);
