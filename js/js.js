@@ -6,6 +6,23 @@ $(window).load(function() { // makes sure the whole site is loaded
 })
 
 jQuery(document).ready(function($){
+
+    $('#coin1').on('click', function(){
+        $('.frontmain>img').attr('src','img/piratesheadcompressor.png');
+        $('.backmain>img').attr('src','img/piratestailscompressor.png');
+    });
+    $('#coin2').on('click', function(){
+        $('.frontmain>img').attr('src','img/lincolnmemorialcentheadscompressor.png');
+        $('.backmain>img').attr('src','img/lincolnmemorialcenttailscompressor.png');
+    });
+    $('#coin3').on('click', function(){
+        $('.frontmain>img').attr('src','img/PILIPINAS1PesoHeadscompressor.png');
+        $('.backmain>img').attr('src','img/PILIPINAS1PesoTailscompressor.png');
+    });
+    $('#coin4').on('click', function(){
+        $('.frontmain>img').attr('src','img/dime heads.png');
+        $('.backmain>img').attr('src','img/dime tails.png');
+    });
     $('h1').addClass('animated fadeInDown');
     // var spinArray = ['animation900','animation1080','animation1260','animation1440','animation1620','animation1800','animation1980','animation2160'];
     var spinArray = ['animation2160','animation1980'];
