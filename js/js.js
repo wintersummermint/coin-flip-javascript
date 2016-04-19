@@ -24,6 +24,15 @@ jQuery(document).ready(function($){
         $('.backmain>img').attr('src','img/dime tails.png');
     });
     $('h1').addClass('animated fadeInDown');
+
+
+    $(".social-open-menu").click(function() {
+      $(".social-itens").toggleClass("open");
+      $(".social-itens").toggleClass("hidden");
+    });
+    //
+
+    
     // var spinArray = ['animation900','animation1080','animation1260','animation1440','animation1620','animation1800','animation1980','animation2160'];
     var spinArray = ['animation2160','animation1980'];
 

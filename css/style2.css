@@ -399,3 +399,119 @@ border: 0;
 box-shadow: 0;
 display: inline;
 }
+
+
+/* about */
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.small {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#social-share {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 20;
+  /*transitions with relative delay*/
+}
+#social-share ul.social-itens .btn-share {
+  position: relative;
+  cursor: pointer;
+  color: white;
+  line-height: 1;
+  outline: 0;
+  border: 0;
+  width: 100px;
+  margin-top: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+#social-share div.social-open-menu .btn-share {
+  position: relative;
+  cursor: pointer;
+  border-radius: 50%;
+  color: white;
+  line-height: 1;
+  outline: 0;
+  border: 0;
+  margin-top: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+#social-share ul.social-itens .btn-share:hover, #social-share div.social-open-menu .btn-share:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+#social-share ul.social-itens {
+  list-style: none;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  display: block;
+  /* display: none; */
+}
+#social-share ul.social-itens .btn-share {
+  width: 50px;
+  height: 50px;
+  /* transform: none; */
+}
+#social-share ul.social-itens .btn-share.social-item-1 {
+  background-color: #3B5998;
+}
+#social-share ul.social-itens .btn-share.social-item-1 i {
+  text-shadow: 0px 0px #344e86, 1px 1px #344e86, 2px 2px #344e86, 3px 3px #344e86, 4px 4px #344e86, 5px 5px #344e86;
+}
+
+#social-share ul.social-itens.open .btn-share {
+  transform: scale(1);
+  right: 20px;
+  position: absolute;
+  width: 100px;
+  border-radius: 5px;
+  opacity: 1;
+  /* transform: translate(0px, -15px); */
+}
+#social-share ul.social-itens li {
+  position: relative;
+}
+#social-share ul.social-itens li .btn-share {
+  transform: scale(0);
+  opacity: 0;
+}
+#social-share ul.social-itens li .btn-share-text {
+  /* opacity: 0; */
+  position: absolute;
+  bottom: 15px;
+  right: 100%;
+  margin-right: 10px;
+  min-width: 75px;
+  padding: 3px 4px;
+  text-align: center;
+  font-weight: 300;
+  background: rgba(20, 20, 20, 0.7);
+  color: #fff;
+  display: block;
+  opacity: 0;
+  /* transition: all 500ms ease-in-out  0.5s; */
+}
+#social-share ul.social-itens li:hover .btn-share-text {
+  opacity: 1;
+}
+#social-share div.social-open-menu .btn-share {
+  width: 30px;
+  height: 30px;
+  background-color: #F44336;
+}
+#social-share div.social-open-menu .btn-share i {
+  text-shadow: 0px 0px #f32c1e, 1px 1px #f32c1e, 2px 2px #f32c1e, 3px 3px #f32c1e, 4px 4px #f32c1e, 5px 5px #f32c1e;
+}
+#social-share .social-itens.open .social-item-1, #social-share .social-itens.open .social-item-1 .btn-share-text {
+  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.1s;
+}
